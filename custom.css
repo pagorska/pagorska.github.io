@@ -1,20 +1,18 @@
 html {
     background: #e6e9e9;
-    background-color: azure;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background: azure;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 80%;
     padding: 2em 2em 4em;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
@@ -26,9 +24,6 @@ h2 {
     margin-top: 1.3em;
 }
 
-a {
-    color: #0083e8;
-}
 
 b, strong {
     font-weight: 600;
@@ -62,13 +57,13 @@ img {
 .italic {
     text-decoration: none;
     font-style: italic;
+    
 }
 
 a:visited {
-    color: white;
+    color: dimgray;
     font-style: italic;
 }
-
 .item h3 {
     
 }
