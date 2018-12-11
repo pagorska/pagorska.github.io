@@ -1,6 +1,7 @@
 html {
     background: #e6e9e9;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,7 +59,59 @@ img {
     
 }
 
+a {
+    color: dimgray;
+}
+
+link {
+    font-style: italic;
+}
+
 a:visited {
     color: dimgray;
     font-style: italic;
+}
+
+.image {
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    display: block;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #545454;
+  color: white;
+  font-size: 14px;
+  padding: 5% 7%;
+}
+
+
+
+/* adjustments for mobile bc pics look weird*/
+@media only screen and (max-device-width: 400px) {
+  /* define mobile specific styles come here */
+    .image .text {
+       display: inline;
+       max-width: 50%;
+    }
 }
