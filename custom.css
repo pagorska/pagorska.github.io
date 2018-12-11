@@ -108,10 +108,12 @@ a:visited {
 
 
 /* adjustments for mobile bc pics look weird*/
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 700px) {
   /* define mobile specific styles come here */
     .image .text {
        display: inline;
        max-width: 50%;
+        max-width: 225px;
+        max-height: 225px;
     }
 }
